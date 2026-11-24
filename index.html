@@ -354,6 +354,37 @@ td.one{font-weight:600;color:var(--indigo);background:var(--indigo-tint)}
 .callout.light h3{color:var(--ink)} .callout.light p{color:var(--ink);max-width:none}
 td.cav{background:var(--indigo-tint)}
 .defn.small{font-size:1.15rem;margin:.75rem 0 1rem}
+
+:root{--ka:#B8500C;--ka-tint:#FBEBDD;--green:#1E7B4B;--green-tint:#E3F3EA;--red:#B4321F;--red-tint:#FBE8E5;--amber:#E0A100;--amber-tint:#FFF5D6;--amber-ink:#7A5200}
+.lead{border-left-color:var(--amber)}
+.weave line{stroke:var(--amber)} .pairline .b{color:var(--amber)}
+.dot.k{background:var(--ka)} .kc{color:var(--ka)}
+.pair.kt > div{border-top-color:var(--ka)} .pair.kt > div + div{border-top-color:var(--leaf)}
+.mail.mk .from{background:var(--ka-tint);color:var(--ka)} .mail.mk .q{background:var(--ka-tint)}
+.flow .end.k{background:var(--ka)} .prec .bar.k{background:var(--ka)}
+.flow .arrow{background:var(--amber)} .flow .arrow::after{border-left-color:var(--amber)} .flow li{border-left-color:var(--amber)} .flow li::before{color:var(--amber-ink)}
+td.pro{background:var(--green-tint)} td.con{background:var(--red-tint)}
+td.cav{background:var(--amber-tint)}
+.callout.light{background:var(--amber-tint);border-left-color:var(--amber)}
+.ask{background:var(--amber-tint);border-left-color:var(--amber)} .ask h3{color:var(--amber-ink)}
+.tag.g{background:var(--green-tint);color:var(--green)} .tag.y{background:var(--amber-tint);color:var(--amber-ink)}
+.band .b2{background:var(--green)} .band .b3{background:var(--ka)}
+.persona.p2{border-top-color:var(--green)} .persona.p3{border-top-color:var(--ka)}
+.lineb.two{border-top-color:var(--green)} .lineb.late{border-top-color:var(--red)}
+.stat.out .n{color:var(--ka)} .stat.out .bar i{background:var(--ka)}
+.ready .st{border-color:var(--red)} .ready .st.yes{background:var(--green);border-color:var(--green)} .ready .st.part{border-color:var(--amber);background:linear-gradient(90deg,var(--amber) 50%,transparent 50%)}
+.legend i{border-color:var(--red)} .legend i.yes{background:var(--green);border-color:var(--green)} .legend i.part{border-color:var(--amber)}
+.layer.add{border-left-color:var(--amber);background:var(--amber-tint)}
+.lines1 li::before{color:var(--amber-ink)}
+.funnel div:nth-child(4){background:#1E7B4B}.funnel div:nth-child(5){background:#166239}
+.reelrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:62rem;margin:1.5rem 0 1.25rem}
+.reelrow figure{margin:0;background:var(--sheet);border:1px solid var(--line)}
+.reel{position:relative;aspect-ratio:9/15;background:var(--indigo-tint)}
+.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reelrow figcaption{padding:.7rem .9rem .85rem;font-size:.92rem;display:grid;gap:.1rem}
+.reelrow figcaption span{color:var(--soft)}
+@media (max-width:66rem){.reelrow{grid-template-columns:1fr;max-width:24rem}}
+@media print{.reel{display:none}}
 </style>
 </head>
 <body>
@@ -386,6 +417,7 @@ td.cav{background:var(--indigo-tint)}
     <a href="#define">Defining KalaAnchal</a>
     <span class="part">Part 3: Going to market</span>
     <a href="#story">Leading with tradition</a>
+    <a href="#reels">Is tradition enough?</a>
     <a href="#social">Social media</a>
     <a href="#model">Offers and business model</a>
     <a href="#market">Markets</a>
@@ -839,16 +871,16 @@ td.cav{background:var(--indigo-tint)}
     <table>
       <thead><tr><th>Category</th><th>What they might commission</th><th>How they buy</th><th>When</th></tr></thead>
       <tbody>
-        <tr><td>Interior designers and architects</td><td>Works and murals for clients' homes and projects</td><td>Specify for a project; return if delivery is reliable</td><td><span class="tag">first</span></td></tr>
-        <tr><td>Hotels and resorts</td><td>Art of the region for lobbies, rooms and restaurants</td><td>Through the design firm or an art consultant, during fit-out<sup><a href="#s44">44</a></sup></td><td><span class="tag">first</span></td></tr>
-        <tr><td>Private homes of affluent families</td><td>A statement work, a prayer room piece, a wall</td><td>Through their designer, or directly after seeing work online</td><td><span class="tag">first</span></td></tr>
-        <tr><td>Corporate offices</td><td>Art for receptions, boardrooms and corridors, often on company themes</td><td>Facilities or brand team; one supplier already delivers commissioned Warli murals for offices<sup><a href="#s45">45</a></sup></td><td><span class="tag">first</span></td></tr>
-        <tr><td>Real-estate developers</td><td>Lobby installations, clubhouse art, show homes</td><td>Design team at project stage</td><td><span class="tag">next</span></td></tr>
-        <tr><td>Restaurants, cafés, boutiques and wellness spaces</td><td>A signature wall or theme</td><td>Owner or designer; small budgets, quick decisions</td><td><span class="tag">next</span></td></tr>
-        <tr><td>Collectors and art advisors</td><td>Signed works by recognised artists</td><td>On the artist's record, usually through a gallery</td><td><span class="tag">next</span></td></tr>
-        <tr><td>Galleries and curators</td><td>Bodies of work for shows</td><td>On consignment, after a relationship is built</td><td><span class="tag">next</span></td></tr>
-        <tr><td>Wedding and event designers</td><td>Backdrops, installations, keepsakes; Pichwai is already used this way<sup><a href="#s38">38</a></sup></td><td>Per event, on tight dates</td><td><span class="tag">next</span></td></tr>
-        <tr><td>Luxury, fashion and lifestyle brands, such as Dior and Prada abroad and Jaypore in India</td><td>Artist collaborations, store art, limited editions</td><td>Brand and creative teams; credit to the maker is negotiable and valuable<sup><a href="#s32">32</a>, <a href="#s46">46</a></sup></td><td><span class="tag">next</span></td></tr>
+        <tr><td>Interior designers and architects</td><td>Works and murals for clients' homes and projects</td><td>Specify for a project; return if delivery is reliable</td><td><span class="tag g">first</span></td></tr>
+        <tr><td>Hotels and resorts</td><td>Art of the region for lobbies, rooms and restaurants</td><td>Through the design firm or an art consultant, during fit-out<sup><a href="#s44">44</a></sup></td><td><span class="tag g">first</span></td></tr>
+        <tr><td>Private homes of affluent families</td><td>A statement work, a prayer room piece, a wall</td><td>Through their designer, or directly after seeing work online</td><td><span class="tag g">first</span></td></tr>
+        <tr><td>Corporate offices</td><td>Art for receptions, boardrooms and corridors, often on company themes</td><td>Facilities or brand team; one supplier already delivers commissioned Warli murals for offices<sup><a href="#s45">45</a></sup></td><td><span class="tag g">first</span></td></tr>
+        <tr><td>Real-estate developers</td><td>Lobby installations, clubhouse art, show homes</td><td>Design team at project stage</td><td><span class="tag y">next</span></td></tr>
+        <tr><td>Restaurants, cafés, boutiques and wellness spaces</td><td>A signature wall or theme</td><td>Owner or designer; small budgets, quick decisions</td><td><span class="tag y">next</span></td></tr>
+        <tr><td>Collectors and art advisors</td><td>Signed works by recognised artists</td><td>On the artist's record, usually through a gallery</td><td><span class="tag y">next</span></td></tr>
+        <tr><td>Galleries and curators</td><td>Bodies of work for shows</td><td>On consignment, after a relationship is built</td><td><span class="tag y">next</span></td></tr>
+        <tr><td>Wedding and event designers</td><td>Backdrops, installations, keepsakes; Pichwai is already used this way<sup><a href="#s38">38</a></sup></td><td>Per event, on tight dates</td><td><span class="tag y">next</span></td></tr>
+        <tr><td>Luxury, fashion and lifestyle brands, such as Dior and Prada abroad and Jaypore in India</td><td>Artist collaborations, store art, limited editions</td><td>Brand and creative teams; credit to the maker is negotiable and valuable<sup><a href="#s32">32</a>, <a href="#s46">46</a></sup></td><td><span class="tag y">next</span></td></tr>
         <tr><td>Airports, metros and public bodies</td><td>Large murals and installations</td><td>Tenders or through museums and agencies; one firm reports supplying 29 metro stations and 17 airports<sup><a href="#s47">47</a></sup></td><td><span class="tag r">later</span></td></tr>
         <tr><td>Museums and cultural institutions</td><td>Acquisitions, exhibitions, documentation</td><td>Slowly, on scholarship and provenance</td><td><span class="tag r">later</span></td></tr>
         <tr><td>Embassies, cultural centres and the diaspora</td><td>Works that represent India abroad</td><td>Through introductions and events</td><td><span class="tag r">later</span></td></tr>
@@ -884,7 +916,7 @@ td.cav{background:var(--indigo-tint)}
         <g class="dotg"><circle cx="120" cy="62" r="9" fill="#074A96"/><text x="135" y="67">Specialist galleries</text></g>
         <g class="dotg"><circle cx="150" cy="250" r="9" fill="#041F42"/><text x="165" y="255">Artisera, Baro Art</text></g>
         <g class="dotg"><circle cx="150" cy="335" r="9" fill="#8A99AE"/><text x="165" y="340">General online marketplaces</text></g>
-        <g class="dotg"><circle cx="560" cy="60" r="13" fill="none" stroke="#4F95DE" stroke-width="4" stroke-dasharray="5 4"/><text x="538" y="65" text-anchor="end" font-weight="700">KalaAnchal, one possible position</text></g>
+        <g class="dotg"><circle cx="560" cy="60" r="13" fill="none" stroke="#E0A100" stroke-width="4" stroke-dasharray="5 4"/><text x="538" y="65" text-anchor="end" font-weight="700">KalaAnchal, one possible position</text></g>
       </svg>
     </div>
     <div class="scroll">
@@ -1102,6 +1134,75 @@ td.cav{background:var(--indigo-tint)}
   </div>
 </section>
 
+<section id="reels">
+  <div class="in">
+    <p class="where">Testing the approach</p>
+    <h2>Is leading with tradition enough to set KalaAnchal apart?</h2>
+    <p class="lead">Tradition as a subject is common ground: every competitor explains traditions. What is uncommon among them is showing the making itself, in depth and in series, from the first step to the finished work.</p>
+
+    <h3>What competitors post now</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Account</th><th>Followers</th><th>What the recent posts are</th><th>Views on recent reels</th></tr></thead>
+      <tbody>
+        <tr><td>Bridge Bharat</td><td>25,538</td><td>Single artworks with artist and size, artist spotlights, an event invitation, and a short series on Sivakasi matchbox art<sup><a href="#s70">70</a></sup></td><td>About 6,000 to 9,000</td></tr>
+        <tr><td>Rooftop</td><td>35,638</td><td>Short explainers such as "What is Thangka painting", workshop and product promotions<sup><a href="#s71">71</a></sup></td><td>About 500 to 4,200</td></tr>
+        <tr><td>MeMeraki</td><td>About 170,000</td><td>Artists at work and art-form explainers; some reels have passed 20 million views<sup><a href="#s49">49</a></sup></td><td>Not read directly</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">Figures for Bridge Bharat and Rooftop are from their twelve most recent posts, read on 24 November 2026.</p>
+
+    <h3>A different way of doing it</h3>
+    <p>Baishan, a maker in rural China, has 567,903 Instagram followers. His recent reels are multi-part series, each following one craft: bow-making, incense, Jianshui purple pottery. Single parts drew between 135,000 and 2.7 million views. He sells his own handmade pieces through a store linked from the profile.<sup><a href="#s72">72</a></sup></p>
+    <div class="reelrow">
+      <figure><div class="reel"><iframe src="https://www.instagram.com/p/DfUg3Fmh2vu/embed" loading="lazy" title="Baishan: a thousand years of bow-making craftsmanship, part 2" allowfullscreen></iframe></div><figcaption><b>Bow-making, part 2</b><span>2.7 million views</span><a href="https://www.instagram.com/p/DfUg3Fmh2vu">Open on Instagram</a></figcaption></figure>
+      <figure><div class="reel"><iframe src="https://www.instagram.com/p/Dd4KO0OTIOd/embed" loading="lazy" title="Baishan: incense, a ritual woven into everyday life, part 1" allowfullscreen></iframe></div><figcaption><b>Incense, part 1</b><span>2.2 million views</span><a href="https://www.instagram.com/p/Dd4KO0OTIOd">Open on Instagram</a></figcaption></figure>
+      <figure><div class="reel"><iframe src="https://www.instagram.com/p/Dc-BzvJTE8H/embed" loading="lazy" title="Baishan: Jianshui purple pottery, part 3" allowfullscreen></iframe></div><figcaption><b>Jianshui purple pottery, part 3</b><span>494,000 views</span><a href="https://www.instagram.com/p/Dc-BzvJTE8H">Open on Instagram</a></figcaption></figure>
+    </div>
+    <p>He is one of many. On Douyin, China's main short-video platform, 14 million users shared heritage craft content in a year, and those videos drew 749.9 billion views.<sup><a href="#s73">73</a></sup> Paper-cutting ranked among the five most popular kinds of heritage craft video there.<sup><a href="#s74">74</a></sup> One creator's film of a Ming-dynasty craft method, shot over two years, reached 380 million views.<sup><a href="#s75">75</a></sup></p>
+
+    <h3>Does India already have this?</h3>
+    <p>Films of Indian crafts being made do exist. A large business group runs a film series on crafts such as Dokra.<sup><a href="#s76">76</a></sup> A craft organisation published short films of makers at work with Google Arts and Culture in 2017.<sup><a href="#s77">77</a></sup> Individual artisans show their process on their own accounts.<sup><a href="#s78">78</a></sup> What the art ventures reviewed here are not doing, on the evidence of their recent posts, is a sustained series that follows one tradition from start to finish and leads to an invitation to commission.</p>
+
+    <h3>Three ways to lead</h3>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Approach</th><th>Advantages</th><th>Drawbacks</th></tr></thead>
+      <tbody>
+        <tr><td>Tradition explainers and artwork posts</td>
+          <td class="pro"><ul><li>Quick and cheap to produce</li><li>Familiar to the audience</li></ul></td>
+          <td class="con"><ul><li>What every competitor already does</li><li>Modest reach, on the figures above</li><li>Little that is KalaAnchal's own</li></ul></td></tr>
+        <tr><td>A "making" series: one tradition, several parts, start to finish</td>
+          <td class="pro"><ul><li>Uses what KalaAnchal has and others lack: field access through Tri-Impact</li><li>Sanjhi fits well: paper-cutting is a proven favourite in this format</li><li>The footage also serves the website, pitches and Tri-Impact's own reporting</li><li>Builds an audience abroad as well as in India</li></ul></td>
+          <td class="con"><ul><li>Needs filming skill, time in the field and editing</li><li>Slow to build; results are not guaranteed</li><li>Views are not commissions</li><li>Needs each maker's consent and a fair arrangement for appearing</li></ul></td></tr>
+        <tr><td>Both: the series as the flagship, with short posts and invitations around it</td>
+          <td class="pro"><ul><li>The series draws attention; the short posts turn it into conversations</li><li>Keeps the account active between episodes</li></ul></td>
+          <td class="con"><ul><li>More work for a small team</li><li>Needs a clear owner</li></ul></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout light">
+      <h3>One difference to keep in mind</h3>
+      <p>Baishan sells small handmade objects that a viewer can buy at once. KalaAnchal offers co-creation and commissions, which follow a conversation. A making series would need a clear next step in every episode: how to start a conversation about a space.</p>
+    </div>
+    <h3>Three series KalaAnchal could start with</h3>
+    <ol>
+      <li><strong>Sanjhi, from paper to finished cut.</strong> The fine cutting is the kind of close hand-work this format rewards.</li>
+      <li><strong>A miniature painting, from pigment to final line.</strong> Preparing colours and brushes is a story in itself.</li>
+      <li><strong>Two traditions, one work.</strong> A co-creation followed from first sketch to installation.</li>
+    </ol>
+    <div class="ask"><h3>Questions for the team</h3><ul>
+      <li>Having watched these reels, what exactly holds attention: the hands, the setting, the pace, the sound?</li>
+      <li>Which Indian accounts come closest? Each of us brings three examples from Instagram and YouTube Shorts.</li>
+      <li>Who can film in the field, and with what equipment?</li>
+      <li>Which tradition do we film first, and which maker is willing?</li>
+      <li>What do we offer makers for appearing?</li>
+      <li>How will we know it is working: views, followers, or enquiries?</li>
+    </ul></div>
+  </div>
+</section>
+
 <section id="social">
   <div class="in">
     <p class="where">Communication, continued</p>
@@ -1117,14 +1218,15 @@ td.cav{background:var(--indigo-tint)}
       <thead><tr><th>Who</th><th>What they do on social media</th><th>What to take from it</th></tr></thead>
       <tbody>
         <tr><td>MeMeraki</td><td>Short videos of artists at work, explainers on art forms, and artists' own accounts run with its help<sup><a href="#s49">49</a></sup></td><td>Process video travels. Helping artists build their own following builds loyalty.</td></tr>
-        <tr><td>Rooftop</td><td>Teaching content: workshops, art-form guides, features on creators who interpret tradition<sup><a href="#s51">51</a></sup></td><td>Education builds an audience that later buys.</td></tr>
-        <tr><td>Craft-led consumer brands</td><td>One accessories brand rebuilt its Instagram around the stories behind Indian prints and crafts, using reels and contests<sup><a href="#s70">70</a></sup></td><td>Story-led content can carry a whole brand.</td></tr>
-        <tr><td>Indian fashion designers</td><td>Shoot for Instagram first; one estimate put 30% to 40% of young designers' business queries as coming through it (2018)<sup><a href="#s71">71</a></sup></td><td>Enquiries arrive as direct messages. Someone has to answer them.</td></tr>
-        <tr><td>A small social enterprise in Meghalaya</td><td>Uses a separate approach for each platform: Instagram for connection, LinkedIn for business leads<sup><a href="#s72">72</a></sup></td><td>The two platforms do different jobs.</td></tr>
+        <tr><td>Rooftop</td><td>Short explainers on art forms, workshops and product promotions; 35,638 followers<sup><a href="#s71">71</a></sup></td><td>Education builds an audience that later buys.</td></tr>
+        <tr><td>Bridge Bharat</td><td>Artworks and artist spotlights, design-fair invitations, a story series on one craft town; 25,538 followers<sup><a href="#s70">70</a></sup></td><td>Polished and design-led, aimed at architects and collectors.</td></tr>
+        <tr><td>Craft-led consumer brands</td><td>One accessories brand rebuilt its Instagram around the stories behind Indian prints and crafts, using reels and contests<sup><a href="#s79">79</a></sup></td><td>Story-led content can carry a whole brand.</td></tr>
+        <tr><td>Indian fashion designers</td><td>Shoot for Instagram first; one estimate put 30% to 40% of young designers' business queries as coming through it (2018)<sup><a href="#s80">80</a></sup></td><td>Enquiries arrive as direct messages. Someone has to answer them.</td></tr>
+        <tr><td>A small social enterprise in Meghalaya</td><td>Uses a separate approach for each platform: Instagram for connection, LinkedIn for business leads<sup><a href="#s81">81</a></sup></td><td>The two platforms do different jobs.</td></tr>
       </tbody>
     </table>
     </div>
-    <p class="note">The wider art market's experience is that Instagram's strength is engaging people and shaping taste, and that it remains limited in finalising sales.<sup><a href="#s73">73</a></sup></p>
+    <p class="note">The wider art market's experience is that Instagram's strength is engaging people and shaping taste, and that it remains limited in finalising sales.<sup><a href="#s82">82</a></sup></p>
 
     <h3>What KalaAnchal could do</h3>
     <div class="pair kt rv">
@@ -1132,7 +1234,7 @@ td.cav{background:var(--indigo-tint)}
         <h3>Instagram: create interest</h3>
         <ul>
           <li><strong>Tradition stories.</strong> One tradition at a time, over two to three weeks: origin, materials, meaning, makers.</li>
-          <li><strong>Hands at work.</strong> Short process videos. The detail of Sanjhi cutting or miniature brushwork is naturally watchable.</li>
+          <li><strong>The making series.</strong> One tradition in several parts, from first step to finished work. This is the flagship.</li>
           <li><strong>Meet the maker.</strong> Named portraits, in the maker's words.</li>
           <li><strong>In a space.</strong> How a tradition could look in a room, lobby or office.</li>
           <li><strong>An invitation.</strong> Regular, simple prompts to start a conversation about a space.</li>
@@ -1178,7 +1280,7 @@ td.cav{background:var(--indigo-tint)}
       </div>
       <div class="lineb two">
         <h4>Collections and represented artists</h4><p class="when">Grows from the first line</p>
-        <dl><dt>Makers</dt><dd>Master artists</dd><dt>What the client gets</dt><dd>Signed works, shown as thematic collections</dd><dt>Clients</dt><dd>Collectors, galleries, institutions</dd><dt>How it earns</dt><dd>A share of each sale. A roughly equal split between artist and gallery is common.<sup><a href="#s74">74</a></sup></dd><dt>To look at</dt><dd>Artisera; Ojas Art</dd></dl>
+        <dl><dt>Makers</dt><dd>Master artists</dd><dt>What the client gets</dt><dd>Signed works, shown as thematic collections</dd><dt>Clients</dt><dd>Collectors, galleries, institutions</dd><dt>How it earns</dt><dd>A share of each sale. A roughly equal split between artist and gallery is common.<sup><a href="#s83">83</a></sup></dd><dt>To look at</dt><dd>Artisera; Ojas Art</dd></dl>
       </div>
       <div class="lineb late">
         <h4>Group-made products</h4><p class="when">When capacity is known</p>
@@ -1187,7 +1289,7 @@ td.cav{background:var(--indigo-tint)}
     </div>
     <h3>What co-creation means for KalaAnchal</h3>
     <p class="defn small">Bringing together the skills of different local art traditions, and where useful a designer or contemporary artist, to create contemporary work that no single tradition would produce alone.</p>
-    <p>There are precedents. An art residency in Odisha paired contemporary urban artists with rural artisans to make work for today's settings.<sup><a href="#s75">75</a></sup> A leading Gond artist has shown alongside a contemporary painter and says such collaborations push him to think in a contemporary way.<sup><a href="#s76">76</a></sup> One project has designers and artisans develop each work together from folklore.<sup><a href="#s77">77</a></sup> Bridge Bharat describes its own work as co-creating contemporary expressions of traditional painting.<sup><a href="#s78">78</a></sup></p>
+    <p>There are precedents. An art residency in Odisha paired contemporary urban artists with rural artisans to make work for today's settings.<sup><a href="#s84">84</a></sup> A leading Gond artist has shown alongside a contemporary painter and says such collaborations push him to think in a contemporary way.<sup><a href="#s85">85</a></sup> One project has designers and artisans develop each work together from folklore.<sup><a href="#s86">86</a></sup> Bridge Bharat describes its own work as co-creating contemporary expressions of traditional painting.<sup><a href="#s87">87</a></sup></p>
     <div class="scroll">
     <table>
       <thead><tr><th>Advantages</th><th>Things to handle with care</th></tr></thead>
@@ -1225,7 +1327,7 @@ td.cav{background:var(--indigo-tint)}
     <p class="lead">Both markets are open. They differ in how much each asks of a new venture.</p>
     <div class="stats fig">
       <div class="stat"><p class="side">India</p><div class="n">Most buyers</div><p>Gallerists say the large majority of buyers of Indian art are Indian or based in India.<sup><a href="#s27">27</a></sup></p><div class="bar"><i style="--w:.9"></i></div></div>
-      <div class="stat out"><p class="side">Abroad</p><div class="n">76%</div><p>Share of global art sales by value held by the US, the UK and China.<sup><a href="#s79">79</a></sup></p><div class="bar"><i style="--w:.76"></i></div></div>
+      <div class="stat out"><p class="side">Abroad</p><div class="n">76%</div><p>Share of global art sales by value held by the US, the UK and China.<sup><a href="#s88">88</a></sup></p><div class="bar"><i style="--w:.76"></i></div></div>
     </div>
     <div class="scroll">
     <table>
@@ -1251,7 +1353,7 @@ td.cav{background:var(--indigo-tint)}
     <h2>What to prepare</h2>
     <p class="lead">Tradition-led engagement needs less than a catalogue of priced works. It still needs a few things in place so that interest, when it comes, has somewhere to go.</p>
     <ul class="ready rv">
-      <li><i class="st"></i><div><b>Three tradition stories</b><span>Text, photographs and short video, with the makers' consent.</span></div></li>
+      <li><i class="st"></i><div><b>The first making series</b><span>One tradition filmed start to finish, with the makers' consent, plus text and photographs for two more.</span></div></li>
       <li><i class="st"></i><div><b>The redesigned website</b><span>Built on the chosen definition.</span></div></li>
       <li><i class="st"></i><div><b>KalaAnchal's social media handles</b><span>With the partner line in each profile.</span></div></li>
       <li><i class="st"></i><div><b>How co-creation works</b><span>One page a client can read in two minutes.</span></div></li>
@@ -1263,10 +1365,10 @@ td.cav{background:var(--indigo-tint)}
     <h3>Questions for an accountant and a lawyer</h3>
     <p>These are for professional advice, at the point the first commission is in sight.</p>
     <ol>
-      <li>Which entity receives payment from overseas clients, given that Tri-Impact holds a foreign contribution registration?<sup><a href="#s80">80</a></sup></li>
+      <li>Which entity receives payment from overseas clients, given that Tri-Impact holds a foreign contribution registration?<sup><a href="#s89">89</a></sup></li>
       <li>What should the terms with makers say on consent, payment and credit?</li>
       <li>How is the share of revenue invested in Living Art Traditions best structured?</li>
-      <li>The Income-tax Act, 2025 limits commercial activity by registered non-profits.<sup><a href="#s81">81</a></sup> This is one more reason for commissions to sit with the venture.</li>
+      <li>The Income-tax Act, 2025 limits commercial activity by registered non-profits.<sup><a href="#s90">90</a></sup> This is one more reason for commissions to sit with the venture.</li>
     </ol>
     <div class="ask"><h3>Questions for the team</h3><ul>
       <li>Which of these can be ready in a month, and who owns each?</li>
@@ -1284,9 +1386,9 @@ td.cav{background:var(--indigo-tint)}
       <div>
         <h3>What the sector evidence says</h3>
         <ul>
-          <li>Grants and CSR on one side, investment on the other. Research on Indian impact enterprises reports that regulations keep CSR funds from flowing to them.<sup><a href="#s82">82</a></sup> Tri-Impact and KalaAnchal therefore draw on different money.</li>
+          <li>Grants and CSR on one side, investment on the other. Research on Indian impact enterprises reports that regulations keep CSR funds from flowing to them.<sup><a href="#s91">91</a></sup> Tri-Impact and KalaAnchal therefore draw on different money.</li>
           <li>Capital for handmade businesses is scarce. Most craft-led small businesses in a 2023 survey needed working capital and growth capital they could not easily get.<sup><a href="#s35">35</a></sup></li>
-          <li>Impact investment in India is sizeable but uneven. Impact enterprises raised USD 2.9 billion in 2023, down from USD 6 billion the year before.<sup><a href="#s83">83</a></sup></li>
+          <li>Impact investment in India is sizeable but uneven. Impact enterprises raised USD 2.9 billion in 2023, down from USD 6 billion the year before.<sup><a href="#s92">92</a></sup></li>
           <li>Comparable ventures have raised money as businesses: one from an impact fund and a retailer, another from an accelerator and angel investors.<sup><a href="#s65">65</a>, <a href="#s49">49</a></sup></li>
         </ul>
       </div>
@@ -1360,7 +1462,7 @@ td.cav{background:var(--indigo-tint)}
         <tr><td>Who speaks to clients</td><td>Tri-Impact; KalaAnchal with the partner named; jointly</td><td>KalaAnchal, with Tri-Impact's credibility carried in four ways</td></tr>
         <tr><td>How KalaAnchal defines itself</td><td>Curatorial house; co-creation studio; a social impact art venture leading with co-creation</td><td>The third</td></tr>
         <tr><td>What sets it apart</td><td>Seven buyer lines; three one-line positions</td><td>Impact with a named partner, less-seen traditions, co-creation rooted in the field</td></tr>
-        <tr><td>How interest is created</td><td>Artwork catalogues; tradition stories</td><td>Tradition stories, on social media and the website, ending in an invitation</td></tr>
+        <tr><td>How interest is created</td><td>Artwork posts and explainers; a making series; both</td><td>A making series as the flagship, with short posts and invitations around it</td></tr>
         <tr><td>Which clients first</td><td>Fourteen categories</td><td>Designers and architects, hotels, private homes, offices</td></tr>
         <tr><td>Which traditions first</td><td>Proven demand; less crowded</td><td>For the team to choose, from what the network does best</td></tr>
         <tr><td>Which market first</td><td>Abroad; India; India with stories reaching abroad</td><td>India, with social media carrying the stories further</td></tr>
@@ -1388,7 +1490,7 @@ td.cav{background:var(--indigo-tint)}
         <tr><td>Traditions</td><td>Which three do we lead with? What material do we have for each?</td></tr>
         <tr><td>Clients</td><td>Which categories and cities first? Where do we already have relationships?</td></tr>
         <tr><td>Competitors</td><td>Who studies which competitor? What will we do differently from the closest one?</td></tr>
-        <tr><td>Social media</td><td>Who owns it? How often can we post? What can we film next month?</td></tr>
+        <tr><td>Social media</td><td>Who owns it? Which tradition do we film first as a making series? How often can we post?</td></tr>
         <tr><td>Commissions</td><td>How does a co-creation run? What do we say on price and time? Who owns delivery?</td></tr>
         <tr><td>Terms</td><td>What share goes to the maker? What share is invested in Living Art Traditions?</td></tr>
         <tr><td>Roles</td><td>How do enquiries pass between Tri-Impact and KalaAnchal? Who writes the impact story?</td></tr>
@@ -1468,20 +1570,29 @@ td.cav{background:var(--indigo-tint)}
       <li id="s67">MeMeraki, page for architects and designers. <a href="https://memeraki.com/pages/memeraki-for-architects-and-designers">memeraki.com</a></li>
       <li id="s68">YourStory, on Industree and Mother Earth (2015). <a href="https://ts.yourstory.com/2015/06/industree-foundation-jacob-mathew">ts.yourstory.com</a></li>
       <li id="s69">SCALE, on Bridge Bharat. <a href="https://scalemag.online/art/in-focus/bridge-bharat-taking-indian-art-from-tradition-to-tomorrow/">scalemag.online</a></li>
-      <li id="s70">Social Samosa, on Zouk's social media approach. <a href="https://www.socialsamosa.com/social-media-strategy/contemporary-to-desi-how-zouk-changed-social-media-10472393">socialsamosa.com</a></li>
-      <li id="s71">Quartz, on Instagram and Indian fashion (2018). <a href="https://qz.com/india/1321163/from-sabyasachi-to-nicobar-instagram-is-changing-the-way-fashion-sells-in-india">qz.com</a></li>
-      <li id="s72">India Development Review, on a Meghalaya start-up's use of social media. <a href="https://idronline.org/article/social-business/linkedin-and-chatgpt-how-a-meghalaya-start-up-drives-online-sales/">idronline.org</a></li>
-      <li id="s73">The Art Newspaper, on Instagram and the art market (2020). <a href="https://www.theartnewspaper.com/blog/instagram-turns-ten-a-decade-of-disruption">theartnewspaper.com</a></li>
-      <li id="s74">Artlogic, on gallery commission splits. <a href="https://artlogic.net/blog-posts/how-to-price-art">artlogic.net</a></li>
-      <li id="s75">The Better India, on the Excavating Odisha art residency. <a href="https://www.thebetterindia.com/86057/excavating-odisha-art-residency-artists-artisans/amp/">thebetterindia.com</a></li>
-      <li id="s76">Inkl, on traditional Indian art's contemporary turn. <a href="https://inkl.com/news/traditional-indian-art-is-witnessing-a-contemporary-makeover-and-the-art-market-is-loving-it">inkl.com</a></li>
-      <li id="s77">Hyperallergic, on the Gondwana Art Project (2021). <a href="https://hyperallergic.com/folk-artists-in-india-get-a-new-global-platform/">hyperallergic.com</a></li>
-      <li id="s78">TheGlitz, interview with the founder of Bridge Bharat. <a href="https://theglitz.media/aakanksha-singh-founder-bridge-bharats-bold-vision/">theglitz.media</a></li>
-      <li id="s79">Art Basel and UBS Global Art Market Report 2026. <a href="https://www.artbasel.com/stories/the-art-basel-and-ubs-global-art-market-report-2026">artbasel.com</a></li>
-      <li id="s80">Tri-Impact Global, Legal and Compliance page. <a href="https://tri-impact.org/legal-compliance">tri-impact.org/legal-compliance</a></li>
-      <li id="s81">Income Tax Department: sections 345 and 346 of the Income-tax Act, 2025. <a href="https://www.incometaxindia.gov.in/w/section-345-5">section 345</a>, <a href="https://www.incometaxindia.gov.in/w/section-346-7">section 346</a></li>
-      <li id="s82">India Development Review, on financing for Indian impact enterprises (2020). <a href="https://idronline.org/?p=2153">idronline.org</a></li>
-      <li id="s83">Impact Investor, on impact investment in India in 2023. <a href="https://impact-investor.com/?p=23771">impact-investor.com</a></li>
+      <li id="s70">Bridge Bharat, Instagram profile, read 24 November 2026. <a href="https://www.instagram.com/bridgebharat/">instagram.com/bridgebharat</a></li>
+      <li id="s71">Rooftop, Instagram profile, read 24 November 2026. <a href="https://www.instagram.com/rooftop_app/">instagram.com/rooftop_app</a></li>
+      <li id="s72">Baishan, Instagram profile, read 24 November 2026. <a href="https://www.instagram.com/baishan_cn/">instagram.com/baishan_cn</a></li>
+      <li id="s73">CGTN, on young people and heritage crafts online (June 2025). <a href="https://news.cgtn.com/news/2025-06-22/How-China-s-youth-are-writing-a-new-chapter-for-ancient-crafts-1Eq0Gc4pUoo/p.html">cgtn.com</a></li>
+      <li id="s74">China Daily, on a Douyin report of the most popular heritage craft videos (2021). <a href="https://www.chinadaily.com.cn/a/202106/19/WS60cd4ec1a31024ad0baca204_4.html">chinadaily.com.cn</a></li>
+      <li id="s75">Thairath, on Chinese craft video creators. <a href="https://en.thairath.co.th/plus/politics&society/106135">thairath.co.th</a></li>
+      <li id="s76">Aditya Birla Group, Kaarigari film series. <a href="https://www.adityabirla.com/kaarigari/">adityabirla.com</a></li>
+      <li id="s77">Dastkari Haat Samiti with Google Arts and Culture, short films on Indian crafts. <a href="https://artsandculture.google.com/story/fQXR65qSvtHaKQ">artsandculture.google.com</a></li>
+      <li id="s78">Her Circle, on artisan accounts to follow on Instagram. <a href="https://www.hercircle.in/en/engage/fashion/trends/6-artisan-accounts-to-follow-on-instagram-to-understand-indian-crafts-10414.html">hercircle.in</a></li>
+      <li id="s79">Social Samosa, on Zouk's social media approach. <a href="https://www.socialsamosa.com/social-media-strategy/contemporary-to-desi-how-zouk-changed-social-media-10472393">socialsamosa.com</a></li>
+      <li id="s80">Quartz, on Instagram and Indian fashion (2018). <a href="https://qz.com/india/1321163/from-sabyasachi-to-nicobar-instagram-is-changing-the-way-fashion-sells-in-india">qz.com</a></li>
+      <li id="s81">India Development Review, on a Meghalaya start-up's use of social media. <a href="https://idronline.org/article/social-business/linkedin-and-chatgpt-how-a-meghalaya-start-up-drives-online-sales/">idronline.org</a></li>
+      <li id="s82">The Art Newspaper, on Instagram and the art market (2020). <a href="https://www.theartnewspaper.com/blog/instagram-turns-ten-a-decade-of-disruption">theartnewspaper.com</a></li>
+      <li id="s83">Artlogic, on gallery commission splits. <a href="https://artlogic.net/blog-posts/how-to-price-art">artlogic.net</a></li>
+      <li id="s84">The Better India, on the Excavating Odisha art residency. <a href="https://www.thebetterindia.com/86057/excavating-odisha-art-residency-artists-artisans/amp/">thebetterindia.com</a></li>
+      <li id="s85">Inkl, on traditional Indian art's contemporary turn. <a href="https://inkl.com/news/traditional-indian-art-is-witnessing-a-contemporary-makeover-and-the-art-market-is-loving-it">inkl.com</a></li>
+      <li id="s86">Hyperallergic, on the Gondwana Art Project (2021). <a href="https://hyperallergic.com/folk-artists-in-india-get-a-new-global-platform/">hyperallergic.com</a></li>
+      <li id="s87">TheGlitz, interview with the founder of Bridge Bharat. <a href="https://theglitz.media/aakanksha-singh-founder-bridge-bharats-bold-vision/">theglitz.media</a></li>
+      <li id="s88">Art Basel and UBS Global Art Market Report 2026. <a href="https://www.artbasel.com/stories/the-art-basel-and-ubs-global-art-market-report-2026">artbasel.com</a></li>
+      <li id="s89">Tri-Impact Global, Legal and Compliance page. <a href="https://tri-impact.org/legal-compliance">tri-impact.org/legal-compliance</a></li>
+      <li id="s90">Income Tax Department: sections 345 and 346 of the Income-tax Act, 2025. <a href="https://www.incometaxindia.gov.in/w/section-345-5">section 345</a>, <a href="https://www.incometaxindia.gov.in/w/section-346-7">section 346</a></li>
+      <li id="s91">India Development Review, on financing for Indian impact enterprises (2020). <a href="https://idronline.org/?p=2153">idronline.org</a></li>
+      <li id="s92">Impact Investor, on impact investment in India in 2023. <a href="https://impact-investor.com/?p=23771">impact-investor.com</a></li>
     </ol>
   </div>
 </section>
