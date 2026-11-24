@@ -378,13 +378,16 @@ td.cav{background:var(--amber-tint)}
 .lines1 li::before{color:var(--amber-ink)}
 .funnel div:nth-child(4){background:#1E7B4B}.funnel div:nth-child(5){background:#166239}
 .reelrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:62rem;margin:1.5rem 0 1.25rem}
-.reelrow figure{margin:0;background:var(--sheet);border:1px solid var(--line)}
-.reel{position:relative;aspect-ratio:9/15;background:var(--indigo-tint)}
-.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.reelrow figcaption{padding:.7rem .9rem .85rem;font-size:.92rem;display:grid;gap:.1rem}
-.reelrow figcaption span{color:var(--soft)}
+.rcard{display:grid;gap:.25rem;align-content:start;background:var(--indigo);color:#fff;text-decoration:none;padding:1.25rem 1.3rem 1.3rem;border-radius:6px;min-height:11rem;transition:transform 160ms var(--ease-out)}
+.rcard b{font-size:1.12rem;line-height:1.25;font-variation-settings:"wdth" 92}
+.rcard span{color:var(--indigo-soft);font-size:.95rem}
+.rcard em{font-style:normal;font-weight:700;color:var(--amber);margin-top:auto;padding-top:.8rem;font-size:.92rem}
+.rcard .play{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--amber);position:relative;margin-bottom:.5rem}
+.rcard .play::after{content:"";position:absolute;left:1rem;top:.75rem;border-left:.95rem solid var(--indigo);border-top:.55rem solid transparent;border-bottom:.55rem solid transparent}
+.rcard:active{transform:scale(.98)} .rcard:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+@media (hover:hover) and (pointer:fine){.rcard:hover{transform:translateY(-2px)}}
 @media (max-width:66rem){.reelrow{grid-template-columns:1fr;max-width:24rem}}
-@media print{.reel{display:none}}
+
 </style>
 </head>
 <body>
@@ -1156,10 +1159,19 @@ td.cav{background:var(--amber-tint)}
     <h3>A different way of doing it</h3>
     <p>Baishan, a maker in rural China, has 567,903 Instagram followers. His recent reels are multi-part series, each following one craft: bow-making, incense, Jianshui purple pottery. Single parts drew between 135,000 and 2.7 million views. He sells his own handmade pieces through a store linked from the profile.<sup><a href="#s72">72</a></sup></p>
     <div class="reelrow">
-      <figure><div class="reel"><iframe src="https://www.instagram.com/p/DfUg3Fmh2vu/embed" loading="lazy" title="Baishan: a thousand years of bow-making craftsmanship, part 2" allowfullscreen></iframe></div><figcaption><b>Bow-making, part 2</b><span>2.7 million views</span><a href="https://www.instagram.com/p/DfUg3Fmh2vu">Open on Instagram</a></figcaption></figure>
-      <figure><div class="reel"><iframe src="https://www.instagram.com/p/Dd4KO0OTIOd/embed" loading="lazy" title="Baishan: incense, a ritual woven into everyday life, part 1" allowfullscreen></iframe></div><figcaption><b>Incense, part 1</b><span>2.2 million views</span><a href="https://www.instagram.com/p/Dd4KO0OTIOd">Open on Instagram</a></figcaption></figure>
-      <figure><div class="reel"><iframe src="https://www.instagram.com/p/Dc-BzvJTE8H/embed" loading="lazy" title="Baishan: Jianshui purple pottery, part 3" allowfullscreen></iframe></div><figcaption><b>Jianshui purple pottery, part 3</b><span>494,000 views</span><a href="https://www.instagram.com/p/Dc-BzvJTE8H">Open on Instagram</a></figcaption></figure>
+      <a class="rcard" href="https://www.instagram.com/baishan_cn/reel/DfUg3Fmh2vu/"><span class="play" aria-hidden="true"></span><b>A thousand years of bow-making craftsmanship, part 2</b><span>2.7 million views</span><em>Watch on Instagram</em></a>
+      <a class="rcard" href="https://www.instagram.com/baishan_cn/reel/Dd4KO0OTIOd/"><span class="play" aria-hidden="true"></span><b>Incense, a ritual woven into everyday life, part 1</b><span>2.2 million views</span><em>Watch on Instagram</em></a>
+      <a class="rcard" href="https://www.instagram.com/baishan_cn/reel/Dc-BzvJTE8H/"><span class="play" aria-hidden="true"></span><b>Jianshui purple pottery, part 3</b><span>494,000 views</span><em>Watch on Instagram</em></a>
     </div>
+    <p class="note">These open on Instagram. The account does not allow its reels to be played inside other websites.</p>
+    <h3>What the format does</h3>
+    <ul>
+      <li><strong>Starts with the raw material.</strong> The incense series opens on bark being soaked, long before anything looks like incense.</li>
+      <li><strong>Stays close to the hands and tools,</strong> in the place where the work is done.</li>
+      <li><strong>Says little.</strong> A few words of on-screen caption, original sound, no presenter talking to the camera.</li>
+      <li><strong>Runs as a series.</strong> One craft across three or four parts, so viewers come back.</li>
+      <li><strong>Leads somewhere.</strong> A store link in the profile, and posts offering the finished pieces.</li>
+    </ul>
     <p>He is one of many. On Douyin, China's main short-video platform, 14 million users shared heritage craft content in a year, and those videos drew 749.9 billion views.<sup><a href="#s73">73</a></sup> Paper-cutting ranked among the five most popular kinds of heritage craft video there.<sup><a href="#s74">74</a></sup> One creator's film of a Ming-dynasty craft method, shot over two years, reached 380 million views.<sup><a href="#s75">75</a></sup></p>
 
     <h3>Does India already have this?</h3>
